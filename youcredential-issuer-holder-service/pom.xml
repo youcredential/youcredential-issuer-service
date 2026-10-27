@@ -1,0 +1,33 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.youcredential.issuer</groupId>
+  <artifactId>youcredential-issuer-holder-service</artifactId>
+  <version>0.0.3.0</version>
+  <name>linkwallet-issuerservice-holders</name>
+  <description>linkwallet-issuerservice-holders</description>
+  
+  <dependencies>
+<!--    api(project(":spi:issuerservice:issuerservice-holder-spi"))-->
+      <dependency>
+        <groupId>org.youcredential.issuer</groupId>
+        <artifactId>youcredential-issuer-holder-spi</artifactId>
+        <version>0.0.3.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.spi.transaction)
+    edc-spi-transaction = { module = "org.eclipse.edc:transaction-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>transaction-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.lib.store)
+    edc-lib-store = { "module" = "org.eclipse.edc:store-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>store-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+ <!--   testImplementation(libs.edc.junit)    
+    testImplementation(testFixtures(project(":spi:issuerservice:issuerservice-holder-spi")))  -->
+   </dependencies>    
+</project>

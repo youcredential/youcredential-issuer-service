@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.youcredential.issuer</groupId>
+  <artifactId>youcredential-issuer-credential-api-local-statuslist</artifactId>
+  <version>0.0.3.0</version>
+  <name>linkwallet-extention-local-statuslist-publisher</name>
+  <description>linkwallet-extention-local-statuslist-publisher</description>
+  
+  <dependencies>
+<!--    api(project(":spi:issuerservice:issuerservice-credential-spi"))-->
+      <dependency>
+        <groupId>org.youcredential.issuer</groupId>
+        <artifactId>youcredential-issuer-credential-spi-status</artifactId>
+        <version>0.0.3.0</version>
+      </dependency>   
+<!--    implementation(libs.edc.spi.transaction)
+    edc-spi-transaction = { module = "org.eclipse.edc:transaction-spi", version.ref = "edc" }-->
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>transaction-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>       
+<!--    implementation(libs.jakarta.rsApi)
+jakarta-rsApi = { module = "jakarta.ws.rs:jakarta.ws.rs-api", version.ref = "rsApi" }-->
+       <dependency>
+        <groupId>jakarta.ws.rs</groupId>
+        <artifactId>jakarta.ws.rs-api</artifactId>
+        <version>4.0.0</version>
+      </dependency>     
+<!--    implementation(libs.edc.spi.web)
+edc-spi-web = { module = "org.eclipse.edc:web-spi", version.ref = "edc" }-->
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>web-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>       
+<!--    implementation(libs.edc.lib.jsonld)
+edc-lib-jsonld = { "module" = "org.eclipse.edc:json-ld-lib", version.ref = "edc" }-->
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>json-ld-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency> 
+      
+<!--    testImplementation(libs.edc.junit)-->
+    
+<!--    testImplementation(libs.restAssured)-->
+    
+<!--    testImplementation(testFixtures(libs.edc.core.jersey))  -->
+    
+  </dependencies>
+</project>

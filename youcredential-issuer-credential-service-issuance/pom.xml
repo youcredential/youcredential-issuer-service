@@ -1,0 +1,124 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.youcredential.issuer</groupId>
+  <artifactId>youcredential-issuer-credential-service-issuance</artifactId>
+  <version>0.0.3.0</version>
+  <name>linkwallet-issuerservice-issuance</name>
+  <description>linkwallet-issuerservice-issuance</description>
+  
+  <dependencies> 
+<!--    api(project(":spi:issuerservice:issuerservice-issuance-spi"))-->
+      <dependency>
+        <groupId>org.youcredential.issuer</groupId>
+        <artifactId>youcredential-issuer-credential-spi-issuance</artifactId>
+        <version>0.0.3.0</version>
+      </dependency>  
+<!--    api(project(":spi:issuerservice:issuerservice-credential-spi")) // for the CredentialStatusService-->
+      <dependency>
+        <groupId>org.youcredential.issuer</groupId>
+        <artifactId>youcredential-issuer-credential-spi-status</artifactId> 
+        <version>0.0.3.0</version>
+      </dependency>      
+<!--    api(project(":spi:issuerservice:issuerservice-holder-spi"))-->
+       <dependency>
+        <groupId>org.youcredential.issuer</groupId>
+        <artifactId>youcredential-issuer-holder-spi</artifactId>
+        <version>0.0.3.0</version>
+      </dependency>     
+<!--    api(project(":spi:verifiable-credential-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi-verifiable-credential</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>      
+<!--    api(project(":spi:keypair-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi-keypair</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>      
+<!--    implementation(project(":core:lib:common-lib"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-lib-common</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>          
+<!--    implementation(project(":core:lib:issuerservice-common-lib"))-->
+      <dependency>
+        <groupId>org.youcredential.issuer</groupId>
+        <artifactId>youcredential-issuer-core-lib-common</artifactId> 
+        <version>0.0.3.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.spi.jwt)
+    edc-spi-jwt = { module = "org.eclipse.edc:jwt-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>jwt-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.spi.transaction)
+    edc-spi-transaction = { module = "org.eclipse.edc:transaction-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>transaction-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.spi.token)
+    edc-spi-token = { module = "org.eclipse.edc:token-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>token-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.lib.token)
+    edc-lib-token = { module = "org.eclipse.edc:token-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>token-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.lib.store)
+    edc-lib-store = { "module" = "org.eclipse.edc:store-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>store-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.lib.statemachine)
+    edc-lib-statemachine = { module = "org.eclipse.edc:state-machine-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>state-machine-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.opentelemetry.instrumentation.annotations)
+    opentelemetry-instrumentation-annotations = { module = "io.opentelemetry.instrumentation:opentelemetry-instrumentation-annotations", version.ref = "opentelemetry" }-->
+       <dependency>
+        <groupId>io.opentelemetry.instrumentation</groupId>
+        <artifactId>opentelemetry-instrumentation-annotations</artifactId>
+        <version>2.21.0</version>
+      </dependency>     
+
+<!--    testImplementation(libs.edc.junit)
+    edc-junit = { module = "org.eclipse.edc:junit", version.ref = "edc" }-->
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>junit</artifactId>
+        <version>0.18.0</version>
+        <scope>test</scope>
+      </dependency>         
+<!--    testImplementation(testFixtures(project(":spi:issuerservice:issuerservice-issuance-spi")))-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>issuerservice-issuance-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    testImplementation(libs.awaitility)  
+    awaitility = { module = "org.awaitility:awaitility", version.ref = "awaitility" }-->
+      <dependency>
+        <groupId>org.awaitility</groupId>
+        <artifactId>awaitility</artifactId>
+        <version>4.3.0</version>
+      </dependency>      
+    </dependencies>   
+</project>

@@ -1,0 +1,96 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.youcredential.issuer</groupId>
+  <artifactId>youcredential-issuer-credential-service-status</artifactId>
+  <version>0.0.3.0</version>
+  <name>linkwallet-issuerservice-credentials</name>
+  <description>linkwallet-issuerservice-credentials</description>
+  
+   <dependencies>
+<!--    api(project(":spi:verifiable-credential-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi-verifiable-credential</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency> 
+<!--    api(project(":spi:issuerservice:issuerservice-credential-spi"))-->
+      <dependency>
+        <groupId>org.youcredential.issuer</groupId>
+        <artifactId>youcredential-issuer-credential-spi-status</artifactId>
+        <version>0.0.3.0</version>
+      </dependency>     
+<!--    api(project(":spi:issuerservice:issuerservice-holder-spi"))-->
+      <dependency>
+        <groupId>org.youcredential.issuer</groupId>
+        <artifactId>youcredential-issuer-holder-spi</artifactId>
+        <version>0.0.3.0</version>
+      </dependency>     
+<!--    api(project(":spi:issuerservice:issuerservice-issuance-spi"))-->
+      <dependency>
+        <groupId>org.youcredential.issuer</groupId>
+        <artifactId>youcredential-issuer-credential-spi-issuance</artifactId>
+        <version>0.0.3.0</version>
+      </dependency>     
+<!--    api(project(":spi:identity-hub-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>     
+<!--    api(project(":protocols:dcp:dcp-spi")) // CredentialOfferMessage-->
+      <dependency>
+        <groupId>com.linkwallet.dcp</groupId>
+        <artifactId>linkwallet-dcp-core-spi</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>     
+<!--    api(libs.edc.spi.http) // for the Request
+    edc-spi-http = { module = "org.eclipse.edc:http-spi", version.ref = "edc" }-->
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>http-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>    
+<!--    implementation(project(":protocols:dcp:dcp-issuer:dcp-issuer-spi"))-->
+      <dependency>
+        <groupId>org.youcredential.dcp</groupId>
+        <artifactId>youcredential-dcp-issuer-spi</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>     
+<!--    implementation(libs.edc.lib.token)
+    edc-lib-token = { module = "org.eclipse.edc:token-lib", version.ref = "edc" }-->
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>token-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>    
+ <!--   implementation(libs.nimbus.jwt)
+    nimbus-jwt = { module = "com.nimbusds:nimbus-jose-jwt", version.ref = "nimbus" }-->
+      <dependency>
+        <groupId>com.nimbusds</groupId>
+        <artifactId>nimbus-jose-jwt</artifactId>
+        <version>10.6</version>
+      </dependency> 
+<!--    implementation(libs.edc.spi.transaction)
+    edc-spi-transaction = { module = "org.eclipse.edc:transaction-spi", version.ref = "edc" }-->
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>transaction-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>   
+<!--      com.squareup.okhttp3:okhttp:4.9.0-->
+       <dependency>
+        <groupId>com.squareup.okhttp3</groupId>
+        <artifactId>okhttp</artifactId>
+        <version>4.9.0</version>
+      </dependency>         
+       
+ <!--   testImplementation(libs.edc.junit)  
+ edc-junit = { module = "org.eclipse.edc:junit", version.ref = "edc" }--> 
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>junit</artifactId>
+        <version>0.18.0</version>
+        <scope>test</scope>
+      </dependency>  
+   </dependencies>    
+</project>

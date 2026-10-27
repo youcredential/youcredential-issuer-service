@@ -1,0 +1,92 @@
+/*
+ *  Copyright (c) 2025 Cofinity-X
+ *
+ *  This program and the accompanying materials are made available under the
+ *  terms of the Apache License, Version 2.0 which is available at
+ *  https://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  SPDX-License-Identifier: Apache-2.0
+ *
+ *  Contributors:
+ *       Cofinity-X - initial API and implementation
+ *
+ */
+
+package org.eclipse.edc.issuerservice.spi.issuance.model;
+
+
+import org.eclipse.edc.participantcontext.spi.types.AbstractParticipantResource;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
+
+/**
+ * Defines an attestation that is used to evaluate an issuance request.
+ */
+public class AttestationDefinition extends AbstractParticipantResource {
+
+    private String attestationType;
+    private Map<String, Object> configuration = new HashMap<>();
+    private long lastModifiedAt;
+
+    private AttestationDefinition() {
+    }
+
+    public String getAttestationType() {
+        return attestationType;
+    }
+
+    public Map<String, Object> getConfiguration() {
+        return configuration;
+    }
+
+    public long getLastModifiedAt() {
+        return lastModifiedAt;
+    }
+
+    public static final class Builder extends AbstractParticipantResource.Builder<AttestationDefinition, Builder> {
+
+        private Builder() {
+            super(new AttestationDefinition());
+        }
+
+        public static Builder newInstance() {
+            return new Builder();
+        }
+
+        public Builder attestationType(String attestationType) {
+            this.entity.attestationType = attestationType;
+            return this;
+        }
+
+        public Builder lastModifiedAt(long lastModifiedAt) {
+            this.entity.lastModifiedAt = lastModifiedAt;
+            return this;
+        }
+
+        public Builder configuration(Map<String, Object> configuration) {
+            this.entity.configuration = configuration;
+            return this;
+        }
+
+        @Override
+        public Builder self() {
+            return this;
+        }
+
+        @Override
+        public AttestationDefinition build() {
+            super.build();
+            Objects.requireNonNull(entity.id, "Must have an ID");
+            Objects.requireNonNull(entity.attestationType, "Must have an attestation type");
+            Objects.requireNonNull(entity.configuration, "Must have an configuration");
+            Objects.requireNonNull(entity.participantContextId, "Must have an participantContextId");
+            if (entity.getLastModifiedAt() == 0L) {
+                entity.lastModifiedAt = entity.clock.millis();
+            }
+            return entity;
+        }
+
+    }
+}

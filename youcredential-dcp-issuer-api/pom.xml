@@ -1,0 +1,157 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.youcredential.dcp</groupId>
+  <artifactId>youcredential-dcp-issuer-api</artifactId>
+  <version>0.0.3.0</version>
+  <name>linkwallet-dcp-issuer-api</name>
+  <description>linkwallet-dcp-issuer-api</description>
+  
+  <dependencies>
+<!--    api(project(":spi:identity-hub-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>  
+<!--    api(project(":spi:verifiable-credential-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi-verifiable-credential</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>      
+<!--    api(project(":spi:issuerservice:issuerservice-issuance-spi"))-->
+      <dependency>
+        <groupId>org.youcredential.issuer</groupId>
+        <artifactId>youcredential-issuer-credential-spi-issuance</artifactId>    
+        <version>0.0.3.0</version>
+      </dependency>      
+<!--    api(project(":protocols:dcp:dcp-spi"))-->
+      <dependency>
+        <groupId>org.youcredential.dcp</groupId>
+        <artifactId>youcredential-dcp-issuer-spi</artifactId>
+        <version>0.0.3.0</version>
+      </dependency>    
+<!--    api(libs.edc.spi.jsonld)
+    edc-spi-jsonld = { module = "org.eclipse.edc:json-ld-spi", version.ref = "edc" }-->
+          <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>json-ld-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>    
+<!--    api(libs.edc.spi.jwt)
+    edc-spi-jwt = { module = "org.eclipse.edc:jwt-spi", version.ref = "edc" }-->
+        <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>jwt-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    api(libs.edc.spi.core)
+    edc-spi-core = { module = "org.eclipse.edc:core-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>core-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>        
+<!--    implementation(libs.edc.spi.web)
+    edc-spi-web = { module = "org.eclipse.edc:web-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>web-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>        
+<!--    implementation(libs.edc.spi.dcp)
+    edc-spi-dcp = { module = "org.eclipse.edc:decentralized-claims-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>decentralized-claims-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>        
+<!--    implementation(libs.edc.lib.jerseyproviders)
+    edc-lib-jerseyproviders = { module = "org.eclipse.edc:jersey-providers-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>jersey-providers-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>        
+<!--    implementation(libs.edc.lib.transform)
+    edc-lib-transform = { module = "org.eclipse.edc:transform-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>transform-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>        
+<!--    implementation(libs.edc.dcp.transform)
+    edc-dcp-transform = { module = "org.eclipse.edc:decentralized-claims-transform", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>decentralized-claims-transform</artifactId>
+        <version>0.18.0</version>
+      </dependency>        
+<!--    implementation(libs.edc.lib.validator)
+    edc-lib-validator = { module = "org.eclipse.edc:validator-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>validator-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>        
+<!--    implementation(project(":protocols:dcp:dcp-transform-lib"))-->
+      <dependency>
+        <groupId>com.linkwallet.dcp</groupId>
+        <artifactId>linkwallet-dcp-core-lib-transform</artifactId> 
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>    
+<!--    implementation(project(":protocols:dcp:dcp-validation-lib"))-->
+      <dependency>
+        <groupId>com.linkwallet.dcp</groupId>
+        <artifactId>linkwallet-dcp-core-lib-validation</artifactId>    
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>    
+<!--    implementation(libs.jakarta.rsApi)
+    jakarta-rsApi = { module = "jakarta.ws.rs:jakarta.ws.rs-api", version.ref = "rsApi" }-->
+      <dependency>
+        <groupId>jakarta.ws.rs</groupId>
+        <artifactId>jakarta.ws.rs-api</artifactId>
+        <version>4.0.0</version>
+      </dependency>  
+        
+<!--    testImplementation(libs.edc.junit)
+edc-junit = { module = "org.eclipse.edc:junit", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>junit</artifactId>
+        <version>0.18.0</version>
+        <scope>test</scope>
+      </dependency> 
+<!--    testImplementation(libs.edc.jsonld)
+    edc-jsonld = { module = "org.eclipse.edc:json-ld", version.ref = "edc" }-->
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>json-ld</artifactId>
+        <version>0.18.0</version>
+        <scope>test</scope>
+      </dependency>         
+<!--    testImplementation(testFixtures(libs.edc.core.jersey))
+    edc-core-jersey = { module = "org.eclipse.edc:jersey-core", version.ref = "edc" }-->
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>jersey-core</artifactId>
+        <version>0.18.0</version>
+        <scope>test</scope>
+      </dependency>          
+<!--    testImplementation(testFixtures(project(":spi:verifiable-credential-spi")))-->
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>verifiable-credential-spi</artifactId>
+        <version>0.18.0</version>
+        <scope>test</scope>
+      </dependency>        
+<!--    testImplementation(libs.nimbus.jwt)  
+    nimbus-jwt = { module = "com.nimbusds:nimbus-jose-jwt", version.ref = "nimbus" }-->
+       <dependency>
+        <groupId>com.nimbusds</groupId>
+        <artifactId>nimbus-jose-jwt</artifactId>
+        <version>10.9</version>
+        <scope>test</scope>
+      </dependency>        
+   </dependencies>    
+</project>

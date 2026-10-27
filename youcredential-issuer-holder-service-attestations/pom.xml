@@ -1,0 +1,49 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.youcredential.issuer</groupId>
+  <artifactId>youcredential-issuer-holder-service-attestations</artifactId>
+  <version>0.0.3.0</version>
+  <name>linkwallet-extention-issuerservice-holder-attestations</name>
+  <description>linkwallet-extention-issuerservice-holder-attestations</description>
+  
+  <dependencies>
+<!--    api(project(":spi:issuerservice:issuerservice-issuance-spi"))-->
+      <dependency>
+        <groupId>org.youcredential.issuer</groupId>
+        <artifactId>youcredential-issuer-credential-spi-issuance</artifactId>
+        <version>0.0.3.0</version>
+      </dependency>      
+<!--    api(libs.edc.spi.core)
+edc-spi-core = { module = "org.eclipse.edc:core-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>core-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>        
+<!--    api(libs.edc.spi.transaction)
+edc-spi-transaction = { module = "org.eclipse.edc:transaction-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>transaction-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>     
+<!--    implementation(libs.edc.spi.validator)
+edc-spi-validator = { module = "org.eclipse.edc:validator-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>validator-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>      
+<!--    implementation(libs.edc.lib.sql)
+edc-lib-sql = { "module" = "org.eclipse.edc:sql-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>sql-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency> 
+
+<!--    testImplementation(libs.edc.junit)
+    testImplementation(libs.edc.lib.json)
+    testImplementation(testFixtures(libs.edc.sql.test.fixtures))  -->
+  </dependencies>
+</project>
