@@ -1,3 +1,7 @@
+/*
+ * core\issuerservice\issuerservice-core
+ */
+ 
 plugins {
     `java-library`
 }
