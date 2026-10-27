@@ -1,0 +1,26 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.youcredential.issuer</groupId>
+  <artifactId>youcredential-issuer-credential-spi-status</artifactId>
+  <version>0.0.3-SNAPSHOT</version>
+  <name>linkwallet-issuerservice-credential-spi</name>
+  <description>linkwallet-issuerservice-credential-spi</description>
+  
+  <dependencies>
+<!--    api(project(":spi:verifiable-credential-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi-verifiable-credential</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>  
+<!--    api(libs.edc.spi.core)
+    edc-spi-core = { module = "org.eclipse.edc:core-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>core-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>  
+<!--    testFixturesImplementation(libs.edc.junit)
+    testFixturesImplementation(libs.junit.jupiter.api)  -->
+   </dependencies>     
+</project>
