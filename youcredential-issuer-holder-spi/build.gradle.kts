@@ -9,7 +9,7 @@
  *
  *  Contributors:
  *       Cofinity-X - initial API and implementation
- *
+ * \spi\issuerservice\issuerservice-holder-spi
  */
 
 plugins {
