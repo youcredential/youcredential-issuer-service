@@ -1,0 +1,150 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.youcredential.dcp</groupId>
+  <artifactId>youcredential-dcp-issuer-service</artifactId>
+  <version>0.0.3-SNAPSHOT</version>
+  <name>linkwallet-dcp-issuer-core</name>
+  <description>linkwallet-dcp-issuer-core</description>
+
+  <dependencies> 
+<!--  
+    api(project(":spi:identity-hub-spi"))
+    api(project(":spi:verifiable-credential-spi"))
+    api(project(":spi:issuerservice:issuerservice-holder-spi"))
+    api(project(":spi:issuerservice:issuerservice-issuance-spi"))
+    api(project(":protocols:dcp:dcp-spi"))
+    api(project(":protocols:dcp:dcp-issuer:dcp-issuer-spi"))
+    api(libs.edc.spi.jwt)
+    api(libs.edc.spi.http)
+    api(libs.edc.spi.identity.did)
+    api(libs.edc.spi.transaction)
+    implementation(libs.edc.vc.jwt)
+    implementation(libs.edc.lib.token)
+    implementation(libs.nimbus.jwt)
+    implementation(libs.opentelemetry.instrumentation.annotations)
+    implementation(libs.opentelemetry.api)
+    testImplementation(libs.edc.junit)
+    testImplementation(testFixtures(project(":spi:verifiable-credential-spi")))  
+-->  
+<!--    api(project(":spi:identity-hub-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>  
+<!--    api(project(":spi:verifiable-credential-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.core</groupId>
+        <artifactId>linkwallet-core-spi-verifiable-credential</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>      
+<!--    api(project(":spi:issuerservice:issuerservice-holder-spi"))-->
+      <dependency>
+        <groupId>org.youcredential.issuer</groupId>
+        <artifactId>youcredential-issuer-holder-spi</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>      
+<!--    api(project(":spi:issuerservice:issuerservice-issuance-spi"))-->
+      <dependency>
+        <groupId>org.youcredential.issuer</groupId>
+        <artifactId>youcredential-issuer-credential-spi-issuance</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>      
+<!--    api(project(":protocols:dcp:dcp-spi"))-->
+      <dependency>
+        <groupId>com.linkwallet.dcp</groupId>
+        <artifactId>linkwallet-dcp-core-spi</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>      
+<!--    api(project(":protocols:dcp:dcp-issuer:dcp-issuer-spi"))-->
+      <dependency>
+        <groupId>org.youcredential.dcp</groupId>
+        <artifactId>youcredential-dcp-issuer-spi</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>      
+<!--    api(libs.edc.spi.jwt)
+    edc-spi-jwt = { module = "org.eclipse.edc:jwt-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>jwt-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>    
+<!--    api(libs.edc.spi.http)
+    edc-spi-http = { module = "org.eclipse.edc:http-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>http-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>        
+<!--    api(libs.edc.spi.identity.did)
+    edc-spi-identity-did = { module = "org.eclipse.edc:identity-did-spi", version.ref = "edc" }-->
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>identity-did-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>       
+<!--    api(libs.edc.spi.transaction)
+    edc-spi-transaction = { module = "org.eclipse.edc:transaction-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>transaction-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>        
+<!--    implementation(libs.edc.vc.jwt)
+    edc-vc-jwt = { module = "org.eclipse.edc:jwt-verifiable-credentials", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>jwt-verifiable-credentials</artifactId>
+        <version>0.18.0</version>
+      </dependency>        
+<!--    implementation(libs.edc.lib.token)
+    edc-lib-token = { module = "org.eclipse.edc:token-lib", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>token-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>        
+<!--    implementation(libs.nimbus.jwt)
+    nimbus-jwt = { module = "com.nimbusds:nimbus-jose-jwt", version.ref = "nimbus" }-->
+      <dependency>
+        <groupId>com.nimbusds</groupId>
+        <artifactId>nimbus-jose-jwt</artifactId>
+        <version>10.6</version>
+      </dependency>
+<!--    implementation(libs.opentelemetry.instrumentation.annotations)
+opentelemetry-instrumentation-annotations = { module = "io.opentelemetry.instrumentation:opentelemetry-instrumentation-annotations", version.ref = "opentelemetry" }-->
+      <dependency>
+        <groupId>io.opentelemetry.instrumentation</groupId>
+        <artifactId>opentelemetry-instrumentation-annotations</artifactId>
+        <version>2.26.1</version>
+      </dependency> 
+<!--    implementation(libs.opentelemetry.api)         
+opentelemetry-api = { module = "io.opentelemetry:opentelemetry-api", version = "1.63.0" }   -->
+      <dependency>
+        <groupId>io.opentelemetry</groupId>
+        <artifactId>opentelemetry-api</artifactId>
+        <version>1.63.0</version>
+      </dependency>    
+      <dependency>
+        <groupId>com.squareup.okhttp3</groupId>
+        <artifactId>okhttp</artifactId>
+        <version>4.9.0</version>
+      </dependency>
+           
+<!--    testImplementation(libs.edc.junit)
+edc-junit = { module = "org.eclipse.edc:junit", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>junit</artifactId>
+        <version>0.18.0</version>
+        <scope>test</scope>
+      </dependency> 
+<!--    testImplementation(testFixtures(project(":spi:verifiable-credential-spi")))  -->
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>verifiable-credential-spi</artifactId>
+        <version>0.18.0</version>
+        <scope>test</scope>
+      </dependency>      
+   </dependencies>     
+</project>
