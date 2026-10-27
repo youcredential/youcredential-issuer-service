@@ -9,7 +9,7 @@
  *
  *  Contributors:
  *       Think-it GmbH - initial API and implementation
- *
+ * \extensions\issuance\issuerservice-holder-attestations
  */
 
 plugins {
