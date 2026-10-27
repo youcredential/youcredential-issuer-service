@@ -9,7 +9,7 @@
  *
  *  Contributors:
  *       Cofinity-X - initial API and implementation
- *
+ * \extensions\issuance\issuerservice-issuance-rules
  */
 
 plugins {

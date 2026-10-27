@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.youcredential.issuer</groupId>
+  <artifactId>youcredential-issuer-credential-service-issuance-rules</artifactId>
+  <version>0.0.3-SNAPSHOT</version>
+  <name>linkwallet-extention-issuerservice-issuance-rules</name>
+  <description>linkwallet-extention-issuerservice-issuance-rules</description>
+  
+  <dependencies>
+<!--    api(project(":spi:issuerservice:issuerservice-issuance-spi"))-->
+      <dependency>
+        <groupId>org.youcredential.issuer</groupId>
+        <artifactId>youcredential-issuer-credential-spi-issuance</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>  
+<!--    api(libs.edc.spi.core)
+edc-spi-core = { module = "org.eclipse.edc:core-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>core-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>    
+<!--    implementation(libs.edc.spi.validator)
+edc-spi-validator = { module = "org.eclipse.edc:validator-spi", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>validator-spi</artifactId>
+        <version>0.18.0</version>
+      </dependency>        
+<!--    implementation(project(":core:lib:issuerservice-common-lib"))-->
+      <dependency>
+        <groupId>org.youcredential.issuer</groupId>
+        <artifactId>youcredential-issuer-core-lib-common</artifactId>
+        <version>0.0.3-SNAPSHOT</version>
+      </dependency>      
+
+<!--    testImplementation(libs.edc.junit)
+    testImplementation(libs.edc.lib.json)
+
+    testFixturesImplementation(libs.edc.spi.identity.did)
+    testFixturesImplementation(libs.junit.jupiter.api)
+    testFixturesImplementation(libs.edc.junit)  -->
+  </dependencies>
+</project>
