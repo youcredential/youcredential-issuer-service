@@ -9,7 +9,7 @@
  *
  *  Contributors:
  *       Cofinity-X - initial API and implementation
- *
+ * \core\lib\issuerservice-common-lib
  */
 
 plugins {
