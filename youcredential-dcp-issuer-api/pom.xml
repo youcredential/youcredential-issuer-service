@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.dcp</groupId>
   <artifactId>youcredential-dcp-issuer-api</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.3.0</version>
   <name>linkwallet-dcp-issuer-api</name>
   <description>linkwallet-dcp-issuer-api</description>
   
@@ -23,13 +23,13 @@
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-issuer-credential-spi-issuance</artifactId>    
-        <version>0.0.3-SNAPSHOT</version>
+        <version>0.0.3.0</version>
       </dependency>      
 <!--    api(project(":protocols:dcp:dcp-spi"))-->
       <dependency>
         <groupId>org.youcredential.dcp</groupId>
         <artifactId>youcredential-dcp-issuer-spi</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <version>0.0.3.0</version>
       </dependency>    
 <!--    api(libs.edc.spi.jsonld)
     edc-spi-jsonld = { module = "org.eclipse.edc:json-ld-spi", version.ref = "edc" }-->

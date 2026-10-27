@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.issuer</groupId>
   <artifactId>youcredential-issuer-credential-api-local-statuslist</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.3.0</version>
   <name>linkwallet-extention-local-statuslist-publisher</name>
   <description>linkwallet-extention-local-statuslist-publisher</description>
   
@@ -11,7 +11,7 @@
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-issuer-credential-spi-status</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <version>0.0.3.0</version>
       </dependency>   
 <!--    implementation(libs.edc.spi.transaction)
     edc-spi-transaction = { module = "org.eclipse.edc:transaction-spi", version.ref = "edc" }-->

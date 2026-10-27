@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.issuer</groupId>
   <artifactId>youcredential-issuer-credential-service-issuance-rules</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.3.0</version>
   <name>linkwallet-extention-issuerservice-issuance-rules</name>
   <description>linkwallet-extention-issuerservice-issuance-rules</description>
   
@@ -11,7 +11,7 @@
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-issuer-credential-spi-issuance</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <version>0.0.3.0</version>
       </dependency>  
 <!--    api(libs.edc.spi.core)
 edc-spi-core = { module = "org.eclipse.edc:core-spi", version.ref = "edc" }-->

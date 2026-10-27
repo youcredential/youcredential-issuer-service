@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.dcp</groupId>
   <artifactId>youcredential-dcp-issuer-service</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.3.0</version>
   <name>linkwallet-dcp-issuer-core</name>
   <description>linkwallet-dcp-issuer-core</description>
 
@@ -42,13 +42,13 @@
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-issuer-holder-spi</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <version>0.0.3.0</version>
       </dependency>      
 <!--    api(project(":spi:issuerservice:issuerservice-issuance-spi"))-->
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-issuer-credential-spi-issuance</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <version>0.0.3.0</version>
       </dependency>      
 <!--    api(project(":protocols:dcp:dcp-spi"))-->
       <dependency>

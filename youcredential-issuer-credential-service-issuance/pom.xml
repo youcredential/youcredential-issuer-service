@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.issuer</groupId>
   <artifactId>youcredential-issuer-credential-service-issuance</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.3.0</version>
   <name>linkwallet-issuerservice-issuance</name>
   <description>linkwallet-issuerservice-issuance</description>
   
@@ -11,19 +11,19 @@
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-issuer-credential-spi-issuance</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <version>0.0.3.0</version>
       </dependency>  
 <!--    api(project(":spi:issuerservice:issuerservice-credential-spi")) // for the CredentialStatusService-->
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-issuer-credential-spi-status</artifactId> 
-        <version>0.0.3-SNAPSHOT</version>
+        <version>0.0.3.0</version>
       </dependency>      
 <!--    api(project(":spi:issuerservice:issuerservice-holder-spi"))-->
        <dependency>
-        <groupId>com.linkwallet.issuer</groupId>
-        <artifactId>linkwallet-issuer-holder-spi</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.issuer</groupId>
+        <artifactId>youcredential-issuer-holder-spi</artifactId>
+        <version>0.0.3.0</version>
       </dependency>     
 <!--    api(project(":spi:verifiable-credential-spi"))-->
       <dependency>
@@ -47,7 +47,7 @@
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-issuer-core-lib-common</artifactId> 
-        <version>0.0.3-SNAPSHOT</version>
+        <version>0.0.3.0</version>
       </dependency>      
 <!--    implementation(libs.edc.spi.jwt)
     edc-spi-jwt = { module = "org.eclipse.edc:jwt-spi", version.ref = "edc" }-->
