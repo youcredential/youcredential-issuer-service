@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.issuer</groupId>
   <artifactId>youcredential-issuer-credential-api-local-statuslist</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.4-SNAPSHOT</version>
   <name>linkwallet-extention-local-statuslist-publisher</name>
   <description>linkwallet-extention-local-statuslist-publisher</description>
   

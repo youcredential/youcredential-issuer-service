@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.issuer</groupId>
   <artifactId>youcredential-issuer-service-main</artifactId>
-  <version>0.0.3-SNAPSHOT</version>
+  <version>0.0.4-SNAPSHOT</version>
   <name>linkwallet-issuerservice-core</name>
   <description>linkwallet-issuerservice-core</description>
   
@@ -50,7 +50,13 @@
         <groupId>org.eclipse.edc</groupId>
         <artifactId>store-lib</artifactId>
         <version>0.18.0</version>
-      </dependency>      
+      </dependency>  
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>util-lib</artifactId>
+        <version>0.18.0</version>
+      </dependency>          
+        
 <!--    testImplementation(libs.edc.junit)
     testImplementation(testFixtures(project(":spi:issuerservice:issuerservice-holder-spi")))
     testImplementation(testFixtures(project(":spi:issuerservice:issuerservice-issuance-spi")))  -->
