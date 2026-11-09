@@ -21,9 +21,9 @@
       </dependency>      
 <!--    api(project(":core:lib:common-lib"))-->
       <dependency>
-        <groupId>com.linkwallet.core</groupId>
-        <artifactId>linkwallet-core-lib-common</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-lib-common</artifactId>
+        <version>0.0.3.0</version>
       </dependency>      
 <!--    api(project(":core:lib:common-lib"))
       <dependency>

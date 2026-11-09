@@ -9,9 +9,9 @@
   <dependencies>
 <!--      api(project(":protocols:dcp:dcp-spi"))-->
       <dependency>
-        <groupId>com.linkwallet.dcp</groupId>
-        <artifactId>linkwallet-dcp-core-spi</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.dcp</groupId>
+        <artifactId>youcredential-dcp-core-spi</artifactId>
+        <version>0.0.3.0</version>
       </dependency>  
    </dependencies> 
 
