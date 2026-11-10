@@ -2,34 +2,34 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.dcp</groupId>
   <artifactId>youcredential-dcp-issuer-api</artifactId>
-  <version>0.0.3.0</version>
+  <version>0.0.4.0</version>
   <name>linkwallet-dcp-issuer-api</name>
   <description>linkwallet-dcp-issuer-api</description>
   
   <dependencies>
 <!--    api(project(":spi:identity-hub-spi"))-->
       <dependency>
-        <groupId>com.linkwallet.core</groupId>
-        <artifactId>linkwallet-core-spi</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-spi-common</artifactId>
+        <version>0.0.3.0</version>
       </dependency>  
 <!--    api(project(":spi:verifiable-credential-spi"))-->
       <dependency>
-        <groupId>com.linkwallet.core</groupId>
-        <artifactId>linkwallet-core-spi-verifiable-credential</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-spi-verifiable-credential</artifactId>
+        <version>0.0.3.0</version>
       </dependency>      
 <!--    api(project(":spi:issuerservice:issuerservice-issuance-spi"))-->
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-issuer-credential-spi-issuance</artifactId>    
-        <version>0.0.3.0</version>
+        <version>0.0.4.0</version>
       </dependency>      
 <!--    api(project(":protocols:dcp:dcp-spi"))-->
       <dependency>
         <groupId>org.youcredential.dcp</groupId>
         <artifactId>youcredential-dcp-issuer-spi</artifactId>
-        <version>0.0.3.0</version>
+        <version>0.0.4.0</version>
       </dependency>    
 <!--    api(libs.edc.spi.jsonld)
     edc-spi-jsonld = { module = "org.eclipse.edc:json-ld-spi", version.ref = "edc" }-->
@@ -96,14 +96,14 @@
       </dependency>        
 <!--    implementation(project(":protocols:dcp:dcp-transform-lib"))-->
       <dependency>
-        <groupId>com.linkwallet.dcp</groupId>
-        <artifactId>linkwallet-dcp-core-lib-transform</artifactId> 
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.dcp</groupId>
+        <artifactId>youcredential-dcp-core-lib-transform</artifactId> 
+        <version>0.0.3.0</version>
       </dependency>    
 <!--    implementation(project(":protocols:dcp:dcp-validation-lib"))-->
       <dependency>
-        <groupId>com.linkwallet.dcp</groupId>
-        <artifactId>linkwallet-dcp-core-lib-validation</artifactId>    
+        <groupId>org.youcredential.dcp</groupId>
+        <artifactId>youcredential-dcp-core-lib-validation</artifactId>    
         <version>0.0.3-SNAPSHOT</version>
       </dependency>    
 <!--    implementation(libs.jakarta.rsApi)

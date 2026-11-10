@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.issuer</groupId>
   <artifactId>youcredential-issuer-credential-spi-issuance</artifactId>
-  <version>0.0.3.0</version>
+  <version>0.0.4.0</version>
   <name>linkwallet-issuerservice-issuance-spi</name>
   <description>linkwallet-issuerservice-issuance-spi</description>
   
@@ -30,15 +30,15 @@
       </dependency>      
 <!--    api(project(":spi:participant-context-spi"))-->
       <dependency>
-        <groupId>com.linkwallet.core</groupId>
-        <artifactId>linkwallet-core-spi-participant-context</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-spi-participant-context</artifactId>
+        <version>0.0.3.0</version>
       </dependency>      
 <!--    api(project(":spi:issuerservice:issuerservice-holder-spi"))-->
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-issuer-holder-spi</artifactId>
-        <version>0.0.3.0</version>
+        <version>0.0.4.0</version>
       </dependency>      
 <!--    testFixturesImplementation(libs.edc.junit)
     testFixturesImplementation(libs.awaitility)

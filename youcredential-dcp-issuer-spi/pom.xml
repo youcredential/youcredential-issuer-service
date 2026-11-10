@@ -2,16 +2,16 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.dcp</groupId>
   <artifactId>youcredential-dcp-issuer-spi</artifactId>
-  <version>0.0.3.0</version>
+  <version>0.0.4.0</version>
   <name>linkwallet-dcp-issuer-spi</name>
   <description>linkwallet-dcp-issuer-spi</description>
 
   <dependencies>
 <!--      api(project(":protocols:dcp:dcp-spi"))-->
       <dependency>
-        <groupId>com.linkwallet.dcp</groupId>
-        <artifactId>linkwallet-dcp-core-spi</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.dcp</groupId>
+        <artifactId>youcredential-dcp-core-spi</artifactId>
+        <version>0.0.3.0</version>
       </dependency>  
    </dependencies> 
 
