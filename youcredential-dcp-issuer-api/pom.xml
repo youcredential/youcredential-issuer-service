@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.dcp</groupId>
   <artifactId>youcredential-dcp-issuer-api</artifactId>
-  <version>0.0.4.0</version>
+  <version>0.0.5-SNAPSHOT</version>
   <name>linkwallet-dcp-issuer-api</name>
   <description>linkwallet-dcp-issuer-api</description>
   
@@ -23,13 +23,13 @@
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-issuer-credential-spi-issuance</artifactId>    
-        <version>0.0.4.0</version>
+        <version>0.0.5-SNAPSHOT</version>
       </dependency>      
 <!--    api(project(":protocols:dcp:dcp-spi"))-->
       <dependency>
         <groupId>org.youcredential.dcp</groupId>
         <artifactId>youcredential-dcp-issuer-spi</artifactId>
-        <version>0.0.4.0</version>
+        <version>0.0.5-SNAPSHOT</version>
       </dependency>    
 <!--    api(libs.edc.spi.jsonld)
     edc-spi-jsonld = { module = "org.eclipse.edc:json-ld-spi", version.ref = "edc" }-->
@@ -96,14 +96,14 @@
       </dependency>        
 <!--    implementation(project(":protocols:dcp:dcp-transform-lib"))-->
       <dependency>
-        <groupId>org.youcredential.dcp</groupId>
-        <artifactId>youcredential-dcp-core-lib-transform</artifactId> 
-        <version>0.0.3.0</version>
+        <groupId>com.linkwallet.dcp</groupId>
+        <artifactId>linkwallet-dcp-core-lib-transform</artifactId> 
+        <version>0.0.3-SNAPSHOT</version>
       </dependency>    
 <!--    implementation(project(":protocols:dcp:dcp-validation-lib"))-->
       <dependency>
-        <groupId>org.youcredential.dcp</groupId>
-        <artifactId>youcredential-dcp-core-lib-validation</artifactId>    
+        <groupId>com.linkwallet.dcp</groupId>
+        <artifactId>linkwallet-dcp-core-lib-validation</artifactId>    
         <version>0.0.3-SNAPSHOT</version>
       </dependency>    
 <!--    implementation(libs.jakarta.rsApi)
