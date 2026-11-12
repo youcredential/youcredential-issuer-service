@@ -21,27 +21,27 @@
       </dependency>      
 <!--    api(project(":spi:issuerservice:issuerservice-holder-spi"))-->
        <dependency>
-        <groupId>org.youcredential.issuer</groupId>
-        <artifactId>youcredential-issuer-holder-spi</artifactId>
-        <version>0.0.5-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-spi-holder</artifactId>
+        <version>0.0.4.0</version>
       </dependency>     
 <!--    api(project(":spi:verifiable-credential-spi"))-->
       <dependency>
         <groupId>org.youcredential.core</groupId>
         <artifactId>youcredential-core-spi-verifiable-credential</artifactId>
-        <version>0.0.3.0</version>
+        <version>0.0.4.0</version>
       </dependency>      
 <!--    api(project(":spi:keypair-spi"))-->
       <dependency>
         <groupId>org.youcredential.core</groupId>
         <artifactId>youcredential-core-spi-keypair</artifactId>
-        <version>0.0.3.0</version>
+        <version>0.0.4.0</version>
       </dependency>      
 <!--    implementation(project(":core:lib:common-lib"))-->
       <dependency>
         <groupId>org.youcredential.core</groupId>
         <artifactId>youcredential-core-lib-common</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <version>0.0.4.0</version>
       </dependency>          
 <!--    implementation(project(":core:lib:issuerservice-common-lib"))-->
       <dependency>

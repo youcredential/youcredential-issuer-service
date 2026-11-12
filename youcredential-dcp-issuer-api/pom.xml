@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.youcredential.dcp</groupId>
+  <groupId>org.youcredential.issuer</groupId>
   <artifactId>youcredential-dcp-issuer-api</artifactId>
   <version>0.0.5-SNAPSHOT</version>
   <name>linkwallet-dcp-issuer-api</name>
@@ -11,13 +11,13 @@
       <dependency>
         <groupId>org.youcredential.core</groupId>
         <artifactId>youcredential-core-spi-common</artifactId>
-        <version>0.0.3.0</version>
+        <version>0.0.4.0</version>
       </dependency>  
 <!--    api(project(":spi:verifiable-credential-spi"))-->
       <dependency>
         <groupId>org.youcredential.core</groupId>
         <artifactId>youcredential-core-spi-verifiable-credential</artifactId>
-        <version>0.0.3.0</version>
+        <version>0.0.4.0</version>
       </dependency>      
 <!--    api(project(":spi:issuerservice:issuerservice-issuance-spi"))-->
       <dependency>
@@ -27,7 +27,7 @@
       </dependency>      
 <!--    api(project(":protocols:dcp:dcp-spi"))-->
       <dependency>
-        <groupId>org.youcredential.dcp</groupId>
+        <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-dcp-issuer-spi</artifactId>
         <version>0.0.5-SNAPSHOT</version>
       </dependency>    
@@ -96,15 +96,15 @@
       </dependency>        
 <!--    implementation(project(":protocols:dcp:dcp-transform-lib"))-->
       <dependency>
-        <groupId>com.linkwallet.dcp</groupId>
-        <artifactId>linkwallet-dcp-core-lib-transform</artifactId> 
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.dcp</groupId>
+        <artifactId>youcredential-dcp-core-lib-transform</artifactId> 
+        <version>0.0.4.0</version>
       </dependency>    
 <!--    implementation(project(":protocols:dcp:dcp-validation-lib"))-->
       <dependency>
-        <groupId>com.linkwallet.dcp</groupId>
-        <artifactId>linkwallet-dcp-core-lib-validation</artifactId>    
-        <version>0.0.3-SNAPSHOT</version>
+        <groupId>org.youcredential.dcp</groupId>
+        <artifactId>youcredential-dcp-core-lib-validation</artifactId>    
+        <version>0.0.4.0</version>
       </dependency>    
 <!--    implementation(libs.jakarta.rsApi)
     jakarta-rsApi = { module = "jakarta.ws.rs:jakarta.ws.rs-api", version.ref = "rsApi" }-->

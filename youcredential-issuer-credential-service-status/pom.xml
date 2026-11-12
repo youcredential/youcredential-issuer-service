@@ -11,7 +11,7 @@
       <dependency>
         <groupId>org.youcredential.core</groupId>
         <artifactId>youcredential-core-spi-verifiable-credential</artifactId>
-        <version>0.0.3.0</version>
+        <version>0.0.4.0</version>
       </dependency> 
 <!--    api(project(":spi:issuerservice:issuerservice-credential-spi"))-->
       <dependency>
@@ -21,9 +21,9 @@
       </dependency>     
 <!--    api(project(":spi:issuerservice:issuerservice-holder-spi"))-->
       <dependency>
-        <groupId>org.youcredential.issuer</groupId>
-        <artifactId>youcredential-issuer-holder-spi</artifactId>
-        <version>0.0.5-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-spi-holder</artifactId>
+        <version>0.0.4.0</version>
       </dependency>     
 <!--    api(project(":spi:issuerservice:issuerservice-issuance-spi"))-->
       <dependency>
@@ -35,13 +35,13 @@
       <dependency>
         <groupId>org.youcredential.core</groupId>
         <artifactId>youcredential-core-spi-common</artifactId>
-        <version>0.0.3.0</version>
+        <version>0.0.4.0</version>
       </dependency>     
 <!--    api(project(":protocols:dcp:dcp-spi")) // CredentialOfferMessage-->
       <dependency>
         <groupId>org.youcredential.dcp</groupId>
         <artifactId>youcredential-dcp-core-spi</artifactId>
-        <version>0.0.3.0</version>
+        <version>0.0.4.0</version>
       </dependency>     
 <!--    api(libs.edc.spi.http) // for the Request
     edc-spi-http = { module = "org.eclipse.edc:http-spi", version.ref = "edc" }-->
@@ -52,7 +52,7 @@
       </dependency>    
 <!--    implementation(project(":protocols:dcp:dcp-issuer:dcp-issuer-spi"))-->
       <dependency>
-        <groupId>org.youcredential.dcp</groupId>
+        <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-dcp-issuer-spi</artifactId>
         <version>0.0.5-SNAPSHOT</version>
       </dependency>     
