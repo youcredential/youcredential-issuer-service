@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.issuer</groupId>
   <artifactId>youcredential-issuer-credential-api-local-statuslist</artifactId>
-  <version>0.0.5-SNAPSHOT</version>
+  <version>0.0.5.0</version>
   <name>linkwallet-extention-local-statuslist-publisher</name>
   <description>linkwallet-extention-local-statuslist-publisher</description>
   
@@ -11,7 +11,7 @@
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-issuer-credential-spi-status</artifactId>
-        <version>0.0.5-SNAPSHOT</version>
+        <version>0.0.5.0</version>
       </dependency>   
 <!--    implementation(libs.edc.spi.transaction)
     edc-spi-transaction = { module = "org.eclipse.edc:transaction-spi", version.ref = "edc" }-->
@@ -42,11 +42,29 @@ edc-lib-jsonld = { "module" = "org.eclipse.edc:json-ld-lib", version.ref = "edc"
         <version>0.18.0</version>
       </dependency> 
       
-<!--    testImplementation(libs.edc.junit)-->
-    
-<!--    testImplementation(libs.restAssured)-->
-    
-<!--    testImplementation(testFixtures(libs.edc.core.jersey))  -->
-    
+<!--    testImplementation(libs.edc.junit)
+edc-junit = { module = "org.eclipse.edc:junit", version.ref = "edc" }-->
+      <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>junit</artifactId>
+        <version>0.18.0</version>
+        <scope>test</scope>
+      </dependency>     
+<!--    testImplementation(libs.restAssured)
+restAssured = { module = "io.rest-assured:rest-assured", version.ref = "restAssured" }-->
+      <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>6.0.0</version>
+        <scope>test</scope>
+      </dependency>         
+<!--    testImplementation(testFixtures(libs.edc.core.jersey))  
+    edc-core-jersey = { module = "org.eclipse.edc:jersey-core", version.ref = "edc" }-->
+       <dependency>
+        <groupId>org.eclipse.edc</groupId>
+        <artifactId>jersey-core</artifactId>
+        <version>0.18.0</version>
+        <scope>test</scope>
+      </dependency>              
   </dependencies>
 </project>

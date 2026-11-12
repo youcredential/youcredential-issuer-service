@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.issuer</groupId>
   <artifactId>youcredential-issuer-service-main</artifactId>
-  <version>0.0.5-SNAPSHOT</version>
+  <version>0.0.5.0</version>
   <name>linkwallet-issuerservice-core</name>
   <description>linkwallet-issuerservice-core</description>
   
@@ -17,7 +17,7 @@
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-issuer-credential-spi-issuance</artifactId> 
-        <version>0.0.5-SNAPSHOT</version>
+        <version>0.0.5.0</version>
       </dependency>      
 <!--    api(project(":core:lib:common-lib"))-->
       <dependency>
