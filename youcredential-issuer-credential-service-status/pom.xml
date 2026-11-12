@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.issuer</groupId>
   <artifactId>youcredential-issuer-credential-service-status</artifactId>
-  <version>0.0.5-SNAPSHOT</version>
+  <version>0.0.5.0</version>
   <name>linkwallet-issuerservice-credentials</name>
   <description>linkwallet-issuerservice-credentials</description>
   
@@ -17,7 +17,7 @@
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-issuer-credential-spi-status</artifactId>
-        <version>0.0.5-SNAPSHOT</version>
+        <version>0.0.5.0</version>
       </dependency>     
 <!--    api(project(":spi:issuerservice:issuerservice-holder-spi"))-->
       <dependency>
@@ -29,7 +29,7 @@
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-issuer-credential-spi-issuance</artifactId>
-        <version>0.0.5-SNAPSHOT</version>
+        <version>0.0.5.0</version>
       </dependency>     
 <!--    api(project(":spi:identity-hub-spi"))-->
       <dependency>
@@ -54,7 +54,7 @@
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-dcp-issuer-spi</artifactId>
-        <version>0.0.5-SNAPSHOT</version>
+        <version>0.0.5.0</version>
       </dependency>     
 <!--    implementation(libs.edc.lib.token)
     edc-lib-token = { module = "org.eclipse.edc:token-lib", version.ref = "edc" }-->

@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.youcredential.issuer</groupId>
   <artifactId>youcredential-dcp-issuer-service</artifactId>
-  <version>0.0.5-SNAPSHOT</version>
+  <version>0.0.5.0</version>
   <name>linkwallet-dcp-issuer-core</name>
   <description>linkwallet-dcp-issuer-core</description>
 
@@ -48,7 +48,7 @@
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-issuer-credential-spi-issuance</artifactId>
-        <version>0.0.5-SNAPSHOT</version>
+        <version>0.0.5.0</version>
       </dependency>      
 <!--    api(project(":protocols:dcp:dcp-spi"))-->
       <dependency>
@@ -60,7 +60,7 @@
       <dependency>
         <groupId>org.youcredential.issuer</groupId>
         <artifactId>youcredential-dcp-issuer-spi</artifactId>
-        <version>0.0.5-SNAPSHOT</version>
+        <version>0.0.5.0</version>
       </dependency>      
 <!--    api(libs.edc.spi.jwt)
     edc-spi-jwt = { module = "org.eclipse.edc:jwt-spi", version.ref = "edc" }-->
