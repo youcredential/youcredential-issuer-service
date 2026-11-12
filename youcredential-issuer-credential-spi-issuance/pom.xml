@@ -32,13 +32,13 @@
       <dependency>
         <groupId>org.youcredential.core</groupId>
         <artifactId>youcredential-core-spi-participant-context</artifactId>
-        <version>0.0.3.0</version>
+        <version>0.0.4.0</version>
       </dependency>      
 <!--    api(project(":spi:issuerservice:issuerservice-holder-spi"))-->
       <dependency>
-        <groupId>org.youcredential.issuer</groupId>
-        <artifactId>youcredential-issuer-holder-spi</artifactId>
-        <version>0.0.5-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-spi-holder</artifactId>
+        <version>0.0.4.0</version>
       </dependency>      
 <!--    testFixturesImplementation(libs.edc.junit)
     testFixturesImplementation(libs.awaitility)

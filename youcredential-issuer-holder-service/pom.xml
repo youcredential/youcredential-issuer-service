@@ -9,9 +9,9 @@
   <dependencies>
 <!--    api(project(":spi:issuerservice:issuerservice-holder-spi"))-->
       <dependency>
-        <groupId>org.youcredential.issuer</groupId>
-        <artifactId>youcredential-issuer-holder-spi</artifactId>
-        <version>0.0.5-SNAPSHOT</version>
+        <groupId>org.youcredential.core</groupId>
+        <artifactId>youcredential-core-spi-holder</artifactId>
+        <version>0.0.4.0</version>
       </dependency>      
 <!--    implementation(libs.edc.spi.transaction)
     edc-spi-transaction = { module = "org.eclipse.edc:transaction-spi", version.ref = "edc" }-->
